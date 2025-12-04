@@ -28,9 +28,10 @@ public class Player {
        * the instance variable record.
        * -----------------------------------------------------------------------------
        */
+      int dash = record.indexOf("-");
+      return record.substring(dash+1);
+
       
-      
-      return "";
     }
     
   }
