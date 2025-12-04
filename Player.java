@@ -29,8 +29,7 @@ public class Player {
        * -----------------------------------------------------------------------------
        */
       int dash = record.indexOf("-");
-      return record.substring(dash+1);
-
+      return record.substring(dash+1); 
       
     }
     
