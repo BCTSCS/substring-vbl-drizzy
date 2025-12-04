@@ -1,6 +1,6 @@
 /*
  * Represents a course
- */
+ */ 
 public class Course {
   
     private String courseCode;    // The course code for a course formatted as "courseName-courseNumber"
