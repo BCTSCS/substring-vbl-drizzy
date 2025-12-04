@@ -33,12 +33,9 @@ public class Blog {
      * Returns a substring containing the year from the date
      */
     public String getYear() {
-      /* ----------------------------------- TO DO -----------------------------------
-       * ✅ Use the substring() method to obtain and return the year portion of the date.
-       * -----------------------------------------------------------------------------
-       */
-  
-      return date.substring(6, 10);
+      String year = this.date.substring(6,10);
+      
+      return year;
     }
   
     /*

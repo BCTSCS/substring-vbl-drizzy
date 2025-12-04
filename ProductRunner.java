@@ -9,6 +9,5 @@ public class ProductRunner {
        * -----------------------------------------------------------------------------
        */
        System.out.println(computer.getPrice());
-      
     }
   }
