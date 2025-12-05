@@ -15,7 +15,7 @@ public class JaydenA {
     }
     public String toString() {
         return "JaydenA: " + this.month + this.day + " - " + this.gift;
-    }
+    } 
     public static void main(String[] args) {
         JaydenA jayden = new JaydenA("April ", 3, "bike");
         System.out.println(jayden.toString());
