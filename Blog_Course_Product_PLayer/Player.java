@@ -1,3 +1,4 @@
+package Blog_Course_Product_PLayer;
 /*
  * Represents a player
  */
