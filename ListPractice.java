@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class ListPractice{
-    public void main(String[] args) {
+    public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<>();
         a.add("syntax");
         a.add("parser");
