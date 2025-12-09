@@ -7,7 +7,7 @@ public final class FileOperator {
     private static File myFile; // The File containing the data
     private static Scanner fileReader;
     
-    public static void createFile(String filename) throws IOException{
+    public static void createFile(String filename){
         try {
             myFile = new File(filename);
             fileReader = new Scanner(myFile);
@@ -16,18 +16,19 @@ public final class FileOperator {
             System.out.println("File does not exist.");
         }
         finally {
-            if (fileReader != null) {
-                fileReader.close();
-            }
+            System.out.println("Continue");
         }
     }
 
-    public static ArrayList<String> getStringData(String filename) throws IOException {
+    public static ArrayList<String> getStringData(String filename) {
         createFile(filename);
         ArrayList<String> result = new ArrayList<>();
         while(fileReader.hasNextLine()) {
             result.add(fileReader.nextLine());
         }
         return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(FileOperator.getStringData("poem.txt"));
     }
 }
