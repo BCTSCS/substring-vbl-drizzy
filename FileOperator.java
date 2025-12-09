@@ -24,4 +24,11 @@ public class FileOperator{
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        ArrayList<String> data = getStringData("Poem.txt");
+        for(String line : data){
+            System.out.println(line);
+        }
+    }
 }
