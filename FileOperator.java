@@ -11,9 +11,9 @@ public final class FileOperator {
             myFile = new File(filename);
             fileReader = new Scanner(myFile);
         } catch (IOException e) {
-            System.out.println("File does not exist")
+            System.out.println("File does not exist");
         } finally {
-            System.out.println("Continue")
+            System.out.println("Continue");
         }
     }
     public ArrayList<String> getStringList(String filename) {
