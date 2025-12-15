@@ -23,7 +23,13 @@ public class SocialMedia {
         return result;
     }
     public static void main(String[] args) {
+        System.out.println("=== TESTING SAMPLE1.TXT ===");
         SocialMedia Kowin = new SocialMedia("sample1.txt");
         Kowin.postsWithHashtag("#Java").stream().forEach(System.out::println);
+        System.out.println(Kowin.postsWithMinLength(50));
+        System.out.println(Kowin.postsWithMinLength(70));
+        SocialMedia Tim = new SocialMedia("sample2.txt");
+        Tim.postsWithHashtag("#Java").stream().forEach(System.out::println);
+        System.out.println(Tim.postsWithMinLength(80));
     }
 }
