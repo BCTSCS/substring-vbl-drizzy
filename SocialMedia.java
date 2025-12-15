@@ -26,8 +26,15 @@ public class SocialMedia{
     }
 
     public static void main(String[] args) {
+        System.out.println("=== TESTING SAMPLE1.TXT ===");
         SocialMedia post = new SocialMedia("sample1.txt");
         SocialMedia post2 = new SocialMedia("sample2.txt");
+        System.out.println(post.postsWithLength(50));
+        System.out.println(post.postsWithLength(70));
         System.out.println(post.postsWithHashtag("#Java"));
+        System.out.println("=== TESTING SAMPLE2.TXT ===");
+        System.out.println(post2.postsWithLength(80));
+        System.out.println(post2.postsWithHashtag("#Marvel"));
+        System.out.println(post2.postsWithHashtag("#EndgameHype"));
     }
 }
